@@ -20,3 +20,6 @@ def main():
     random_results = HodnoceniStudentu(random_numbers(30, 0, 100))
     print(random_results.count())
     print(random_results.get_sorted())
+
+if __name__ == "__main__":
+    main()
