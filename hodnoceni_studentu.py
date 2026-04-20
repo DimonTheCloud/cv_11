@@ -24,6 +24,16 @@ class StudentsGrades:
         else:
             return "F"
 
+    def find(self, points):
+        result = []
+
+        for i in range(len(self.scores)):
+            if self.scores[i] == points:
+                result.append(i)
+
+        return result
+
+
 
 
 results = StudentsGrades([85, 42, 91, 67, 50, 73, 100, 38, 58])
