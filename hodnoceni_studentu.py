@@ -1,7 +1,7 @@
 from sorting import random_numbers
 
 
-class StudentsGrades:
+class HodnoceniStudentu:
     def __init__(self, scores):
         self.scores = scores
         self._sorted_scores = None
@@ -71,7 +71,7 @@ class StudentsGrades:
 
 
 def main():
-    results = StudentsGrades([85, 42, 91, 67, 50, 73, 100, 38, 58])
+    results = HodnoceniStudentu([85, 42, 91, 67, 50, 73, 100, 38, 58])
 
     print(results.count())
 
@@ -86,7 +86,7 @@ def main():
     print(results.find_sorted(50))
     print(results.find_sorted(77))
 
-    random_results = StudentsGrades(random_numbers(30, 0, 100))
+    random_results = HodnoceniStudentu(random_numbers(30, 0, 100))
     print(random_results.count())
     print(random_results.get_sorted())
 
